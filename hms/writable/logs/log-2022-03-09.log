@@ -1,0 +1,101 @@
+CRITICAL - 2022-03-09 14:10:12 --> Call to a member function create() on null
+#0 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->create()
+#1 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#2 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-09 14:10:43 --> Undefined property: App\Controllers\Payment::$paymentModel
+#0 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 120, Array)
+#1 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->create()
+#2 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#3 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-09 14:12:01 --> Unknown column 'check_in_by' in 'field list'
+CRITICAL - 2022-03-09 14:12:01 --> Unknown column 'check_in_by' in 'field list'
+#0 C:\xampp\htdocs\ashokas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\ashokas\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\ashokas\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\ashokas\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\ashokas\app\Models\PaymentModel.php(9): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(120): App\Models\PaymentModel->create(Array)
+#6 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->create()
+#7 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#8 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-09 14:26:07 --> Trying to access array offset on value of type bool
+#0 C:\xampp\htdocs\ashokas\app\Views\reservation\receipt.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\ashokas\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ashokas\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ashokas\system\Common.php(1097): CodeIgniter\View\View->render('reservation/rec...', Array, true)
+#4 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(230): view('reservation/rec...', Array)
+#5 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->receipt('50390371')
+#6 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-09 14:28:33 --> Undefined variable: invoice_data
+#0 C:\xampp\htdocs\ashokas\app\Views\payment\receipt.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\ashokas\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ashokas\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ashokas\system\Common.php(1097): CodeIgniter\View\View->render('payment/receipt', Array, true)
+#4 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(181): view('payment/receipt', Array)
+#5 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->receipt('50390371')
+#6 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-09 14:30:43 --> Undefined variable: payment_data
+#0 C:\xampp\htdocs\ashokas\app\Views\payment\receipt.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\ashokas\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ashokas\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ashokas\system\Common.php(1097): CodeIgniter\View\View->render('payment/receipt', Array, true)
+#4 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(181): view('payment/receipt', Array)
+#5 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->receipt('50390371')
+#6 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-09 14:31:34 --> Undefined index: reservation_date
+#0 C:\xampp\htdocs\ashokas\app\Views\payment\receipt.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\ashokas\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ashokas\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ashokas\system\Common.php(1097): CodeIgniter\View\View->render('payment/receipt', Array, true)
+#4 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(181): view('payment/receipt', Array)
+#5 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->receipt('50390371')
+#6 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-09 14:32:18 --> Undefined index: deposit_amount
+#0 C:\xampp\htdocs\ashokas\app\Views\payment\receipt.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 69, Array)
+#1 C:\xampp\htdocs\ashokas\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ashokas\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ashokas\system\Common.php(1097): CodeIgniter\View\View->render('payment/receipt', Array, true)
+#4 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(181): view('payment/receipt', Array)
+#5 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->receipt('50390371')
+#6 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-09 14:32:54 --> Undefined index: check_in_by
+#0 C:\xampp\htdocs\ashokas\app\Views\payment\receipt.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 89, Array)
+#1 C:\xampp\htdocs\ashokas\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ashokas\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ashokas\system\Common.php(1097): CodeIgniter\View\View->render('payment/receipt', Array, true)
+#4 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(181): view('payment/receipt', Array)
+#5 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->receipt('50390371')
+#6 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-09 14:44:29 --> Invalid file: payment/payment_receipt.php
+#0 C:\xampp\htdocs\ashokas\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('payment/payment...')
+#1 C:\xampp\htdocs\ashokas\system\Common.php(1097): CodeIgniter\View\View->render('payment/payment...', Array, true)
+#2 C:\xampp\htdocs\ashokas\app\Controllers\Payment.php(199): view('payment/payment...', Array)
+#3 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(824): App\Controllers\Payment->payment_receipt('50390371')
+#4 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#5 C:\xampp\htdocs\ashokas\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ashokas\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
